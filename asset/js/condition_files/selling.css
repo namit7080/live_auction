@@ -1,0 +1,332 @@
+#main-nav{
+    
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    
+
+
+    min-height: 10vh;
+}
+#maing-head-nav{
+    color: white;
+    font-size: 3vh;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    display: inline-block;
+
+}
+#main-l{
+    color: red;
+    font-size: 4vh;
+}
+#search{
+    display: inline-block;
+    margin-left: 2vw;
+}
+#search input{
+    background-color: black;
+    height: 4vh;
+    width: 20vw;
+    color: white;
+    border-radius: 1rem;
+    padding-left: 1vw;
+}
+
+#name-login{
+    display: inline-block;
+    /* width: 5vw; */
+   /* background-color: wheat; */
+   font-size: 3vh;
+   margin-left: 50vw;
+   /* background-color: rgb(128, 0, 0); */
+   color: rgb(0, 0, 0);
+   border-radius: 0 0 0 2px black,0 0 0 4px black;
+
+}
+#register{
+    position: relative;
+    margin-left: 0.8vh;
+    display: inline-block;
+    
+    
+    font-size: 3vh;
+}
+
+
+
+#selling-head{
+    
+    height: 50vh;
+    background-color: #a55c1b;
+    background-image: linear-gradient(315deg, #57300e 0%, #000000 74%);
+}
+
+#selling-head-desciption{
+    
+     position: relative;
+     color: white;
+     width: 40%;
+     /* background-color: rgb(65, 43, 43); */
+     left: 15%;
+     top: 10%;
+    
+    
+     
+
+
+}
+.decoration{
+      font-size: 5vh;
+      text-decoration: underline;
+      text-decoration-color: 	#FFD700 ;
+
+
+}
+.decoration-2{
+    margin-top: 3vh;
+      font-size: 2.5vh;
+      color: gold;
+
+}
+.decoration-3{
+    margin-top: 3vh;
+    /* font-size: 1.5vh; */
+    color: white;
+}
+.decoration-4{
+    margin-top: 3vh;
+    font-size: 2.5vh;
+    color: gold;
+}
+.decoration-4 div{
+    display: inline-block;
+    color: rgb(246, 244, 244);
+}
+
+.selling-image-head{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    
+    left: 60%;
+    bottom: 35%;
+    
+}
+.selling-image-head img{
+   
+    width: 20vw;
+    height: 40vh;
+}
+
+
+
+#bulb-container{
+    width: 50%;
+    margin-left: 25%;
+    /* background-color: lawngreen; */
+    text-align: center;
+}
+
+#wire{
+    margin-left: 50%;
+    height: 25vh;
+    width: 0.4vw;
+    background-color: rgb(59, 59, 59);
+    overflow: hidden;
+   
+}
+
+#bulb{
+    /* margin-left: 50%; */
+    margin-left: 15vw;
+    height: 10vh;
+    width: 20vw;
+    height: 10rem;
+    background-color: #8a8809;
+    border-radius: 25vh 25vh 0 0;
+    /* background-color: #fff; */
+    box-shadow: 0px 200px 140px 20px rgb(101, 128, 128);
+    animation: rotation 3s infinite linear;
+    
+     
+     
+  
+}
+@keyframes rotation{
+
+   0%{
+       transform: rotate(1deg);
+   }
+    5%{
+    transform: rotate(2.5deg);
+    }
+    10%{
+        transform: rotate(4deg);
+    }
+    15%{
+        transform: rotate(5.5deg);
+    }
+    20%{
+        transform: rotate(7deg);
+    }
+    25%{
+        transform: rotate(5.5deg);
+    }
+    30%{
+        transform: rotate(4deg);
+    }
+    35%{
+        transform: rotate(2.5deg);
+    }
+    40%{
+        transform: rotate(1deg);
+    }
+    45%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-1deg);
+    }
+    55%{
+        transform: rotate(-2.5deg);
+    }
+    60%{
+        transform: rotate(-4deg);
+    }
+    65%{
+        transform: rotate(-5.5deg);
+    }
+    70%{
+        transform: rotate(-7deg);
+    }
+    75%{
+        transform: rotate(-5.5deg);
+    }
+    80%{
+        transform: rotate(-4deg);
+    }
+    85%{
+        transform: rotate(-2.5deg);
+    }
+    90%{
+        transform: rotate(-2deg);
+    }
+    95%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+
+}
+
+#offer{
+    margin-top: 1rem;
+   
+}
+.offer{
+  z-index: 2;  
+  height: 20vh;
+  width:12vw;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popular{
+    margin-top: 5%;
+     background-color: rgb(66, 65, 65);
+     height: 50%;
+     text-align: center;
+
+  
+  
+  
+
+
+}
+#item-box{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#popular-head{
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color:gold ;
+    color: rgb(245, 245, 245);
+    font-size: 3vh;
+    
+
+}
+.container-each{
+    display: inline-block;
+    width: 20%;
+    background-color: rgb(3, 3, 3);
+    height: 90%;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border-radius: 1rem;
+    word-break: break-all;
+   
+
+}
+.container-each img{
+    margin-top: 1vh;
+    /* background-color: violet; */
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+
+
+}
+.shadow{
+    height: 50%;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+.shadow:hover{
+    height: 80%;
+    transition: all 0.5s ease;
+  
+}
+.product-name{
+    margin-top: 1vh;
+    font-weight: bold;
+    color: gold;
+}
+.product-description{
+    margin-top: 1vh;
+    word-wrap: break-word;
+    color: orange;
+
+}
+.bid-price{
+    margin-top: 1vh;
+    color: white;
+}
+
+.bid-price span{
+   color: orangered;
+   font-weight: bold;
+}

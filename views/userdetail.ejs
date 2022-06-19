@@ -1,0 +1,75 @@
+<nav id="main-nav">
+
+  <div id="maing-head-nav">
+    <span id="main-l">L</span>ive Auction
+  </div>
+ <form action="" id="search">
+  <input type="text" placeholder="Search Item To Find" onkeyup="sendData(this)">
+  
+ 
+ </form>
+ 
+  
+ <% if (locals.user){%>
+
+ <div id="name-login">
+  <button class="dropbtn"><%=user.username%> </button>
+    
+   <div class="dropdown-content">
+    <a href="/log-in">New Product</a>
+    <a href="/your/account">Your-Account</a>
+    <a href="#">Your Card</a>
+    </div>
+
+ </div>
+ <%} else{%>
+  <div id="name-login">
+    <a href="/log-in">Log-in |</a>
+ </div>
+  <%}%>
+ 
+ <% if (!locals.user){%>
+ <div id="register">
+     Register
+ </div>
+ <%} else{%>
+  <div id="register">
+    <a href="/log-in/out">Log-out</a>
+</div>
+ <%}%>
+
+
+
+</nav>
+
+
+<main id="categ-main-tag">
+     
+  
+    <!-- <h2><%=product.ptype%></h2> -->
+
+     <hr>
+     <% for (i of product){%>
+      <a href="/product/detail/?id=<%=i._id%>">
+    <div id="each-product-main">
+
+      <div id="each-product-main-img">
+          <img src="<%=i.avatar[0]%>" alt="">
+      </div>
+      <div id="each-product-main-desc">
+           <h3> <%=i.pname%></h3> 
+         
+           <p>Highest Price :<%=i.phprice%></p>
+           
+           <p>Base Price :<%=i.pbaseprice%></p>
+
+
+      </div>
+
+   </div>
+  </a>
+   <%}%>
+
+    
+
+</main>

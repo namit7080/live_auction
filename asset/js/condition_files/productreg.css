@@ -1,0 +1,132 @@
+
+#firstbox{
+  position: relative;
+  width: 50%;
+  /* background-color: aqua; */
+  border-radius: 1rem;
+  display: inline-block;
+}
+#secondbox{
+  position: absolute;
+  width: 40%;
+  background-color: bisque;
+  border-radius: 1rem;
+  display: inline-block;
+ height: 100%;
+  overflow: scroll;
+  
+  
+
+}
+
+#product-registration{
+  position: relative;
+   width: 80%;
+   margin-left: 10%;
+   margin-top: 5vh;
+   background-color: rgb(67, 67, 68);
+   border: 2px solid red;
+   border-radius: 25px;
+  
+
+
+}
+label{
+
+    color: rgb(214, 75, 75);
+    font-size: 3vh;
+    margin-left:5% ;
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+#p-input{
+   display: block;
+   margin-bottom: 2%;
+   width: 20vw;
+   height: 4vh;
+   background: #0f0f0f;
+   padding-left: 1rem;
+   border-radius: 1rem;
+   color: gold;
+   margin-left:5% ;
+
+   
+
+   
+
+}
+#p-input-d{
+   display: block;
+   margin-bottom: 2%;
+  
+   background-color: black;
+   padding-left: 1rem;
+   border-radius: 1rem;
+   color: gold;
+   margin-left:5% ;
+}
+#pbutton{
+   margin-top: 2%;
+   background-color: rgb(73, 73, 73);
+   display: block;
+   margin-left:5% ;
+   width: 20%;
+   height: 5%;
+   color: gold;
+   
+}
+#pbuttom:hover{
+   background-color: rgb(53, 53, 136);
+}
+
+
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select only Images';
+  display: inline-block;
+  background-color: gray;
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+  
+  font-weight: 700;
+  font-size: 10pt;
+  margin-left: 35%;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+#file-choosen{
+  margin-left: 8%;
+}
+#preview-images{
+  width: 90%;
+  border: 1px solid rgb(182, 180, 180);
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+  
+ 
+}
+
+figure{
+  width: 45%;
+}
+img{
+  width: 100%;
+}
+
+

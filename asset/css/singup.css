@@ -1,0 +1,96 @@
+#triangle-1{
+    display: inline-block;
+    height: 80%;
+    width: 50%;
+    /* background-color: aqua; */
+    -webkit-box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    -moz-box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    transform: rotate(45deg);
+    margin-top: 5%;
+    margin-left: -35%;
+}
+#application-form{
+    position: absolute;
+    margin-left: 20%; 
+     margin-top: 10%;
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+    background-color: #F2AA4CFF;
+
+
+ 
+    
+
+}
+#circle-1{
+    text-align: center;
+    width: 35%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgb(4, 92, 107);
+    margin-left: -50px;
+    margin-top: -50px;
+
+}
+#sing-up-from{
+   display: inline-block;
+   height: 60%;
+   width: 40%;
+   background-color: aqua;
+
+}
+#circle-1 a{
+    margin-top: 50%;
+    color: red;
+}
+#form input{
+    margin-left: 25%;
+    display: block;
+    margin-bottom: 3%;
+    border-radius: 1rem;
+    width: 50%;
+    height: 8%;
+    padding: 2%;
+    background-color: black;
+    color: wheat;
+}
+#button{
+    margin-left: 25%;
+    display: block;
+    margin-bottom: 3%;
+    border-radius: 1rem;
+    width: 50%;
+    height: 8%;
+    padding: 2%;
+    background-color: rgb(197, 93, 93);
+}
+
+#circle-2{
+    text-align: center;
+    width: 35%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgb(6, 87, 30);
+    margin-left: 350px;
+    margin-top: -30px;
+
+}
+#t-2{
+    position: absolute;
+    color: rgb(216, 212, 212);
+    display: inline-block;
+    height: 80%;
+    width: 50%;
+   
+
+
+    -webkit-box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    -moz-box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    box-shadow: 14px -12px 24px 8px rgba(209,54,7,0.9);
+    transform: rotate(-138deg);
+    margin-top: 7%;
+    margin-left: 70%;
+
+}

@@ -1,0 +1,25 @@
+#working-box{
+   width: 90%;
+   height: 100%;
+   margin-left: 5%;
+   background-color: #fc9842;
+   background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+   padding-top: 5%;
+}
+.glass{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+     border: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+#head-tag-work{
+     padding: 2%;
+     margin-left: 40%;
+     font-size: 3vw;
+     /* background-color: aquamarine; */
+     width: 10vw;
+
+}

@@ -1,0 +1,284 @@
+<nav id="main-nav">
+
+    <div id="maing-head-nav">
+      <span id="main-l">L</span>ive Auction
+    </div>
+   <form action="" id="search">
+    <input type="text" placeholder="Search Item To Find" onkeyup="sendData(this)">
+   
+   
+   </form>
+   
+    
+   <% if (locals.user){%>
+ 
+   <div id="name-login">
+    <button class="dropbtn"><%=user.username%> </button>
+      
+     <div class="dropdown-content">
+      <a href="/log-in">New Product</a>
+      <a href="/your/account">Your-Account</a>
+      <a href="#">Your Card</a>
+      </div>
+
+   </div>
+   <%} else{%>
+    <div id="name-login">
+      <a href="/log-in">Log-in | Sing-in</a>
+   </div>
+    <%}%>
+   
+   <% if (!locals.user){%>
+   <div id="register">
+       
+   </div>
+   <%} else{%>
+    <div id="register">
+      <a href="/log-in/out">Log-out</a>
+  </div>
+   <%}%>
+
+
+
+</nav>
+
+
+<div class="slideshow-container">
+  <section id="search-section">
+    
+  </section>
+
+<div id="selling-head" class="fade mySlides">
+  
+   <div id="selling-head-desciption">
+       <div class="decoration">Gold Coin</div>
+        <div class="decoration-2">
+            Exclusive offer 10% of on this Week
+        </div>
+        <div class="decoration-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, ea.
+        </div>
+        <div class="decoration-4">
+           Base Price  <div> Rs-250000 </div>
+        </div>
+       
+   </div>
+
+   <div class="selling-image-head">
+       <img src="https://img.icons8.com/fluency/344/coins.png" alt="">
+   </div>
+
+
+</div>
+
+<div id="selling-head" class="fade mySlides">
+
+  <div id="selling-head-desciption">
+      <div class="decoration">Vodka</div>
+       <div class="decoration-2">
+           Exclusive offer 10% of on this Week
+       </div>
+       <div class="decoration-3">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, ea.
+       </div>
+       <div class="decoration-4">
+          Base Price  <div> Rs-2500 </div>
+       </div>
+      
+  </div>
+
+  <div class="selling-image-head">
+      <img src="https://cdn-icons-png.flaticon.com/512/2844/2844877.png" alt="">
+  </div>
+
+
+</div>
+
+
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+
+
+
+
+
+
+<div id="popular">
+  
+     <div id="popular-head">
+        popular in Store
+     </div>
+     
+     <div id="item-box">
+      <% for (i of allproduct){%>
+      <a href="/product/detail/?id=<%=i._id%>">
+      <div class="container-each">
+       <div class="shadow">
+         <img src="<%=i.avatar[0]%>" alt="" class="">
+       
+        <div class="product-name">
+           <%=i.pname%>
+        </div>
+
+       <div class="product-description">
+        <!-- <%=i.pdescription%> -->
+       </div>
+
+       <div class="bid-price">
+          <span>Highest-Bid:</span><%=i.phprice%>
+       </div>
+       <div class="base-price">
+          <span>Base-Price:</span><%=i.pbaseprice%>
+       </div>
+
+        </div>
+       
+      </div>
+      </a>
+      <%}%>
+       
+ 
+  
+
+
+</div>
+
+<div id="product-categories">
+
+  <div id="hovered">
+    <div id="popular-head">
+      Each-Categories
+    </div>
+  </div>
+
+
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Antique"> 
+    <div>
+       Antique
+    </div>
+    </a> 
+
+  </div>
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Art">
+   <div>
+      Art
+    </div>
+  </div>
+   </a>
+
+  <div class="each-categories">
+
+    <a href="/each/categories/?id=Jewelery">
+      <div>
+      Jewelery
+      </div>
+    </a> 
+    </div>
+   
+
+ 
+  <div class="each-categories">
+    <a href="/each/categories/?id=Furtuniture">
+    <div>
+      Furtuniture
+    </div>
+   </a>
+  </div>
+  
+
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Fashion">
+    <div>
+      Fashion
+    </div>
+   </a>
+  </div>
+  
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=HomeDecor">
+    <div>
+      Home & Decor
+    </div>
+   </a>
+  </div>
+
+  <div class="each-categories">
+
+    <a href="/each/categories/?id=Coins">
+    <div>
+      Coins
+    </div>
+   </a>
+
+  </div>
+
+  <div class="each-categories">
+
+    <a href="/each/categories/?id=Grocerery">
+    <div>
+      Grocerey
+    </div>
+    </a>
+
+  </div>
+
+  <div class="each-categories">
+
+    <a href="/each/categories/?id=Electronic">
+    <div>
+      Electronic
+    </div>
+    </a>
+
+  </div>
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Watches">
+    <div>
+      Watches
+    </div>
+    </a>
+  </div>
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Cars">
+    <div>
+      Cars
+    </div>
+  </a>
+  </div>
+
+  <div class="each-categories">
+    <a href="/each/categories/?id=Other">
+    <div>
+      Other
+    </div>
+   </a>
+  </div>
+
+
+</div>
+
+<div id="bulb-container">
+  <div id="wire"></div>
+
+  <div id="bulb"></div>
+
+  <div id="offer">
+    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3787/3787264.png" alt="" class="offer"></a>
+  </div>
+</div>
+
+

@@ -1,0 +1,91 @@
+<section id="eachproduct">
+     
+    <div id="product-images">
+   
+    <% for(i of product.avatar){%>
+     <div class="mySlides">
+          
+          <img src="<%=i%>" style="width:100%" id="product-image-box">
+    </div>
+     <%}%> 
+     
+
+
+         <a class="prev" style="color: red;" onclick="plusSlides(-1)">❮</a>
+         <a class="next"style="color: red;" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    
+
+
+
+    </div>
+
+   
+
+    <div id="product-info">
+
+      
+        <div id="product-info-detail">
+           <h1><%=product.pname%></h1>
+           
+           
+            <div>Highest Bid: <span style="text-decoration: none; color: rgb(253, 6, 6);"><%=product.phprice%></span></div>
+            <div>Base Price: <span style="text-decoration: none; color: white;"><%=product.pbaseprice%></span></div>
+            <div>Number of Bid: <span style="text-decoration: none; color: white;"><%=product.biding.length%></span></div>
+            <div>Last Date of Bid: <span style="text-decoration: none; color: white;"><%=product.plastdate%></span></div>
+            <div style="font-size: 20px;">Description: <span style="text-decoration: none; color: white;"><%=product.pdescription%></span></div>
+            
+            <%if(locals.user&&locals.user.id!=product.user){%>
+             <button id="make-id">Make Your Bid</button>
+             <%}%>
+             <% if (locals.user&&locals.user.id!=product.user){%>
+              
+                 <a href="/contact/room/?id=<%=product._id%>&type=<%=locals.user.email%>" target="_blank"> 
+                 
+                 <button id="connect-id" type="submit"> Contact With Seller</button>
+                </a>
+              
+             <% } %>
+             <%if(locals.user&&product.status=="true"&&product.seller==locals.user.email){%>
+              <form action="/payment/form" method="GET">
+              <button id="make-id" type="submit">Make Paymeny</button>
+               </form>
+              <%}%>
+             <div id="bid-from">
+
+              <button id="close-window">
+                X
+              </button>
+               <div id="bid-term">
+                 Your Increment Will we added to the Highest Bid Price Till Now
+                </div>
+                <!-- ?id=<%=product._id%> -->
+               <form action="/bidding/api" method="POST">
+                <form>
+                   <input type="number" min="100" placeholder="Enter Amount To increment(Min 100)" id="increment-price" name="increment" required>
+                   <div></div>
+                   <input type="hidden"  name="id" value="<%=product._id%>">
+                   <button type="submit" id="bid-button1">Bid</button>
+
+                </form>
+
+               <div id="confirm-status">
+                   
+               </div>
+
+              
+              </div>
+           
+              
+          </div>
+         
+          
+    </div>
+
+ 
+
+
+</section>
+
+

@@ -1,0 +1,110 @@
+<div id="chat-box-container">
+   
+    <div id="chat-box">
+
+        <div id="chat-box-head">
+             
+             <div>
+               
+              <button id="sold-id-button">SOLD-OUT</button>
+             
+              <button id="remove-user-button">Remove this User</button> 
+            </div>
+        </div>
+        
+        
+
+
+
+        
+        <ul id="chat-box-message">
+            <div id="sure-from">
+
+                <button class="close-windows">
+                  X
+                </button>
+            
+                <a href="/payment/?pid=<%=pid%>&sid=<%=iid%>&bid=<%=uid%>">
+                    <!-- <h3>Are you want to sure to Sell</h3> -->
+                   
+                    <button type="submit">Confirm</button>
+                   
+                </a>
+                
+            </div>
+
+            <div id="remove-from">
+
+                <button class="close-windows">
+                  X
+                </button>
+            
+                <form action="">
+                    <h3> Remove this User</h3>
+                    <button type="submit">Confirm</button>
+                </form>
+                
+            </div>
+
+            <% for (i of message){%>
+
+           <%  if(i.email==locals.user.email) {%>   
+            <li class="self-message">
+               <%=i.message%>
+
+            </li>
+            <%}else{%>
+               
+            
+            <li class="other-message">
+                <%=i.message%>
+              
+            </li>
+            <%}%>
+         <%}%>
+        </ul>
+   
+        <div id="chat-message-input-container">
+            <input type="text" id="chat-message-input" placeholder="Type here..">
+            <button id="send-message">Send</button>
+           
+           
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script src="/js/chat_engine.js"></script>
+
+
+<% if (locals.user){%>
+    <script>
+        new Chatengine('chat-box','<%=iid%>','<%=pid%>','<%=uid%>')
+    </script>
+<%}%>
+
+<script>
+  $("#sold-id-button").click(function() {
+  console.log("Hello");
+  $("#sure-from").show();
+  $('#remove-from').hide();
+ 
+  }) 
+  $("#remove-user-button").click(function() {
+  console.log("Hello");
+  $("#sure-from").hide();
+  $('#remove-from').show();
+ 
+  }) 
+
+
+  $(".close-windows").click(function() {
+  $("#sure-from").hide();
+  $('#remove-from').hide();
+ 
+  })
+</script>

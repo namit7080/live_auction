@@ -1,0 +1,88 @@
+#your-product-heading {
+   color: gold;
+   margin-left: 10%;
+   margin-top: 5%;
+}
+#your-each-product{
+     /* display: grid; */
+     background-color: rgb(46, 46, 45);
+     height: 60%;
+     overflow: scroll;
+     width: 80%;
+     margin-left: 10%;
+     text-align: center;
+
+     
+    
+     
+
+}
+#your-each-product:hover{
+   box-shadow: rgb(47, 233, 109) 2px 4px 8px 16px;
+}
+
+
+.your-product{
+   background: rgba(119, 119, 119, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+border: 1px solid rgba(255, 255, 255, 0.49);
+   height: 40%;
+   width: 50%;
+   margin-left: 5%;
+   margin-top: 10%;
+}
+
+
+.your-product-image{
+   vertical-align:top;
+   position: relative;
+   display: inline-block;
+   width: 30%;
+   height: 60%;
+   
+   /* background-color: violet; */
+}
+.your-product-price{
+   text-align: center;
+   vertical-align:top;
+   display: inline-block;
+   width: 30%;
+   height: 100%;
+  
+   color: white;
+   margin-left: 2%;
+   margin-right: 2%;
+   
+}
+.your-product-price div{
+  
+   margin-top: 10%;
+   margin-bottom: 10%;
+   
+}
+
+.your-product-info{
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    overflow: scroll;
+    height: 100%;
+    color: rgb(255, 249, 255);
+    /* background-color: violet; */
+
+
+}
+.your-product-info li{
+   margin-top: 5%;
+   margin-bottom: 5%;
+   list-style-type: none;
+}
+
+
+
+
+
+/* snow */

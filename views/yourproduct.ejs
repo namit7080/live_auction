@@ -1,0 +1,71 @@
+<div id="your-product-heading">
+     <h1>Hey <span style="color: red;"><%=You.username%></span></h1>
+    <h2>Your Product is Valuable for Us as Oxygen for You</h2>
+</div>
+
+<div id="your-each-product">
+<% for(i of Product){ %>
+
+<div class="your-product" id="each-box-id">
+    
+    
+       
+     <div class="your-product-image">
+         <img src="<%=i.avatar[0]%>" alt="">
+
+     </div>
+
+
+
+    <div class="your-product-price">
+       <div style="font-size: 25px; color: red;">
+           <%=i.pname%>
+       </div>
+
+       <div>
+           Highest Price:  <span style="color: orange;"><%=i.phprice%></span>
+       </div>
+ 
+       <div>
+         Base Price:  <span style="color: orange;"><%=i.pbaseprice%></span>
+       </div>
+
+       <div>
+        Number of Bid:  <span style="color: orange;"><%=i.biding.length%></span>
+       </div>
+
+       <div>
+           <button>Sold Out</button>
+
+       </div>
+
+    </div>
+
+    <div class="your-product-info">
+     
+        <div style="font-size: 25px; color: red; margin-top: 10%;">
+            All Bideres <%=locals.user.email%>
+        </div>
+       <% for(j of i.biding) {%>
+        <a href="/chat/user/?uid=<%=j.user.email%>&pid=<%=i._id%>&iid=<%=locals.user.email%>" style="color: orange;" target="blank">
+        <li>
+            <!-- <%=j.user.email%>
+            <%=i._id%> -->
+            <span><%=j.user.username%></span>
+            <span style="color: rgb(121, 165, 246);">  Price: <span><%=j.price%></span></span>
+        </li>
+       </a>
+        <%}%>
+       
+
+       
+
+
+    </div>
+
+
+</div>
+
+<%}%>
+
+</div>

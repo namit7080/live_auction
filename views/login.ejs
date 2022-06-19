@@ -1,0 +1,86 @@
+<% if (!locals.user){%>
+<div>
+
+    <div id="triangle-1">
+ 
+    </div>
+ 
+    <div id="application-form">
+       <div id="circle-1">
+          <a href="/sing-up">
+             <img src="https://cdn-icons-png.flaticon.com/512/364/364090.png" class="icon-image" alt="">
+          </a>
+             
+       </div>
+       <form action="/log-in/user" method="POST" id="form">
+           
+          <input type="text" name="username" placeholder="Enter Your UserName" required>
+         
+          <input type="password" name="password" minlength="6" placeholder="Enter Password" required>
+        
+          <button type="submit" id="button"> Log-in</button>
+ 
+       </form>
+ 
+     </div>
+ 
+    <div id="t-2">
+      
+    </div>
+   
+ 
+ </div>
+
+ <%} else{%>
+
+   <div id="product-registration">
+      <form action="/product/create" enctype="multipart/form-data" method="POST">
+       <div id="firstbox">  
+       <label for="pname">Product Name :  </label>
+       <input type="text" placeholder="Max-10" name="pname" id="p-input" maxlength="15" required>
+       <label for="cars">Product-Type</label>
+       <select name="ptype" id="p-input" required>
+           <option value="Antique">Antique</option>
+           <option value="Art">Art</option>
+           <option value="Jewelery">Jewelery</option>
+           <option value="Furtuniture">Furtuniture</option>
+           <option value="Fashion">Fashion</option>
+           <option value="HomeDecor">Home & Decor</option>
+           <option value="Coins">Coins</option>
+           <option value="Grocerey">Grocerey</option>
+           <option value="Electronic">Electronic</option>
+           <option value="Watches">Watches</option>
+           <option value="Cars">Cars</option>
+           <option value="Other">Other</option>
+           
+       </select>
+       <label for="pdescription">Description:  </label>
+       <textarea rows="4" cols="30" name="pdescription" placeholder="Describe you Product" id="p-input-d" required></textarea>
+       <label for="pname">Base-Price:  </label>
+       <input type="number" placeholder="Price in Rupee(INR)" name="pbaseprice" id="p-input" maxlength="15" required>
+       <label for="pname">Last-Date for Bidding</label>
+       <input type="date"  name="pdate"  id="p-input-d" required>
+       <label for="pname">Other-info:  </label>
+       <input type="number" placeholder="Working, Warranty (optional)" name="pother" id="p-input" maxlength="15">
+       <!-- <label for="pimage">Select Images:  </label> -->
+       <input type="file" name="avatar"  multiple  class="custom-file-input" id="custom-file-input" onchange="preview()" required>
+       <p id="file-choosen">No of File Choosen</p>
+       </div> 
+       <div id="secondbox"> -->
+             <div id="preview-images">
+   
+             </div>
+       </div> 
+       <input type="submit" id="pbutton">
+      
+   
+   
+   
+      </form>
+   
+   
+   </div>
+
+
+
+ <%}%>  

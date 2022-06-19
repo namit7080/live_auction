@@ -1,0 +1,160 @@
+#chat-box-container{
+     width: 100%;
+     height: 100%;
+
+     display: grid;
+     justify-content: center;
+     
+   
+    
+   
+
+}
+
+#chat-box{
+    position: relative;
+    width: 600px;
+    height: 750px;
+    background-color: rgb(5, 5, 5);
+     /* background-color: aqua; */
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(70, 70, 70);
+
+   
+   
+
+}
+
+#chat-box-head{
+    
+
+     width: 90%;
+     height: 10%;
+     background-color: gray;
+     color: yellow;
+     
+     margin: 4%;
+     display: grid;
+     text-align: center;
+     font-size: 50px;
+     
+     border-radius: 1rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(70, 70, 70);
+     
+
+
+}
+#chat-box-head{
+    display: inline-block;
+}
+
+#chat-box-message{
+   
+
+    width: 90%;
+    height: 70%;
+    margin: 1%;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgb(34, 34, 34);
+    /* border-color: rgb(70, 70, 70); */
+    overflow-y: scroll;
+}
+#chat-box-message li{
+       position: relative;
+       width: 60%;
+       min-height: 10%;
+       height: auto;
+
+      
+       margin: 2%;
+       padding: 2%;
+
+       list-style: none;
+   
+
+}
+
+.other-message{
+    background-image: linear-gradient(gold,rgb(255, 223, 42),rgb(250, 225, 81),rgb(250, 235, 185));
+    
+
+}
+
+.self-message{
+    background-image: linear-gradient(rgb(32, 32, 32),rgb(49, 49, 49),rgb(53, 53, 53),rgb(77, 76, 76));
+    left: 30%;
+    color: gold;
+}
+
+#chat-message-input-container{
+   
+    width: 90%;
+    height: 5%;
+    margin: 4%;
+    border-radius: 1rem;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(70, 70, 70); */
+
+
+
+}
+#chat-message-input{
+    
+    height: 100%;
+    width: 78%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: orange;
+
+
+}
+#send-message{
+    height: 100%;
+    margin-left: 5%;
+    width: 12%;
+    background-color: orange;
+    display: inline-block;
+    
+}
+#sold-id-button{
+    
+   
+   background-color: rgb(255, 174, 0);
+   width: 40%;
+   height: 50%;
+   border-radius: 2rem;
+}
+#remove-user-button{
+    background-color: rgb(255, 174, 0);
+    width: 40%;
+    height: 50%;
+    border-radius: 2rem;
+}
+
+#sure-from{
+    background-color: rgb(94, 94, 94);
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    align-items: center;
+    
+    z-index: 2;
+    display: none;
+   
+}
+#remove-from{
+    background-color: rgb(133, 133, 133);
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    align-items: center;
+    display: none;
+}

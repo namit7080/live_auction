@@ -1,0 +1,56 @@
+<div id="chat-box-container">
+   
+    <div id="chat-box">
+
+        <div id="chat-box-head">
+            Chat With Admin<br>
+            <span style="font-size: medium; color: rgb(129, 216, 129);">One-to-One Encryption</span>
+        </div>
+        
+        <ul id="chat-box-message">
+
+            <% for (i of message){%>
+
+           <% if(i.email==current){%>   
+            <li class="self-message">
+               <%=i.message%>
+                <br>
+                
+              
+            </li>
+            <%}else{%>
+               
+            
+            <li class="other-message">
+                <%=i.message%>
+                
+            </li>
+            <%}%>
+         <%}%>
+        
+        </ul>
+   
+        <div id="chat-message-input-container">
+            <input type="text" id="chat-message-input" placeholder="Type here..">
+            <button id="send-message">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script src="/js/chat_engine.js"></script>
+
+
+<% if (locals.user){%>
+    <script>
+        
+        new Chatengine('chat-box','<%=current%>','<%=user._id%>','<%=current%>')
+  
+    </script>
+    <script type="script">
+        var myDiv = document.getElementById("chat-box-message");
+        myDiv.scrollTop = myDiv.scrollHeight;
+    </script>
+<%}%>
